@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Chess Academy — get in touch to book a free demo, ask about programs, or visit our campus in Chennai." />
+  <title>Contact — Britzenix Chess Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="chesslogo.png" type="image/x-icon" />
+  <style>
+    /* Extra contact page styles */
+    .contact-info-block { padding-top: 1rem; }
+    .contact-info-block .display-md { margin-bottom: 1rem; }
+    .contact-info-block > p { color: var(--ivory-dim); line-height: 1.8; margin-bottom: 2rem; font-size: .95rem; }
+    .contact-map-wrap {
+      margin-top: 2rem; border-radius: var(--r-lg); overflow: hidden;
+      border: 1px solid rgba(245,240,232,.06); height: 300px;
+    }
+    .contact-map-wrap iframe { width: 100%; height: 100%; border: none; display: block; filter: grayscale(1) invert(1) brightness(.7) contrast(1.1); }
+    .faq-item {
+      border-bottom: 1px solid rgba(245,240,232,.06); padding: 1.25rem 0;
+    }
+    .faq-question {
+      font-family: var(--font-display); font-size: 1.05rem; color: var(--ivory);
+      cursor: pointer; display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem;
+    }
+    .faq-question::after { content: '+'; color: var(--gold); font-size: 1.2rem; flex-shrink: 0; transition: transform .3s; }
+    .faq-item.open .faq-question::after { transform: rotate(45deg); }
+    .faq-answer { font-size: .9rem; color: var(--ivory-dim); line-height: 1.75; max-height: 0; overflow: hidden; transition: max-height .4s var(--ease-out), padding .3s; }
+    .faq-item.open .faq-answer { max-height: 200px; padding-top: .75rem; }
+  </style>
+</head>
+<body>
+
+<!-- Global floating chess-piece background layer (behind everything) -->
+<div class="piece-field" aria-hidden="true"></div>
+
+<!-- WhatsApp floating action button -->
+<a class="whatsapp-float" href="https://wa.me/919087470774?text=Hi%2C%20I%27m%20interested%20in%20Chess%20Academy" target="_blank" rel="noopener" aria-label="Chat with Britzenix on WhatsApp">
+  <span class="whatsapp-tooltip">Chat with us</span>
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M16.004 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.258.59 4.464 1.71 6.41L3.2 28.8l6.55-1.68a12.74 12.74 0 0 0 6.25 1.64h.005c7.068 0 12.797-5.73 12.797-12.8 0-3.418-1.332-6.633-3.75-9.05a12.71 12.71 0 0 0-9.048-3.71Zm0 23.42h-.004a10.62 10.62 0 0 1-5.41-1.482l-.388-.23-3.886.998 1.037-3.79-.253-.39a10.6 10.6 0 0 1-1.626-5.728c0-5.866 4.773-10.638 10.634-10.638 2.84 0 5.51 1.108 7.518 3.118a10.56 10.56 0 0 1 3.11 7.524c0 5.866-4.773 10.618-10.732 10.618Zm5.83-7.954c-.32-.16-1.89-.932-2.183-1.04-.293-.107-.506-.16-.72.16-.213.32-.825 1.04-1.012 1.254-.187.213-.373.24-.693.08-.32-.16-1.35-.498-2.572-1.587-.95-.848-1.592-1.895-1.78-2.215-.186-.32-.02-.493.14-.652.144-.143.32-.373.48-.56.16-.187.213-.32.32-.534.106-.213.053-.4-.027-.56-.08-.16-.72-1.735-.987-2.376-.26-.624-.524-.54-.72-.55l-.613-.01c-.213 0-.56.08-.853.4-.293.32-1.12 1.094-1.12 2.67 0 1.574 1.146 3.094 1.306 3.307.16.213 2.255 3.443 5.464 4.83.763.33 1.36.527 1.825.674.767.244 1.466.21 2.018.127.616-.092 1.89-.773 2.157-1.52.267-.747.267-1.387.187-1.52-.08-.134-.293-.214-.613-.374Z" fill="#fff"/>
+  </svg>
+</a>
+
+
+<!-- ── NAVBAR ──────────────────────────────────────────────── -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Britzenix Chess Academy Home">
+      <div class="nav-logo-icon"><img src="chesslogo.png" alt="Britzenix Chess Academy Logo"></div>
+      <span class="nav-logo-text">Britzenix <span>Chess Academy</span></span>
+    </a>
+    <ul class="nav-menu" role="list">
+      <li><a href="index.html"   class="nav-link">Home</a></li>
+      <li><a href="about.html"   class="nav-link">About</a></li>
+      <li><a href="campus.html"  class="nav-link">Campus</a></li>
+      <li><a href="index.html#programs" class="nav-link">Programs</a></li>
+      <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-gold nav-cta">Join Now</a>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="index.html"   class="nav-link">Home</a>
+  <a href="about.html"   class="nav-link">About</a>
+  <a href="campus.html"  class="nav-link">Campus</a>
+  <a href="index.html#programs" class="nav-link">Programs</a>
+  <a href="reviews.html" class="nav-link">Reviews</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="contact.html" class="btn btn-gold" style="margin-top:.5rem">Join Now</a>
+</nav>
+
+<!-- ── PAGE HERO ───────────────────────────────────────────── -->
+<header class="page-hero">
+  <div class="board-3d-stage" aria-hidden="true">
+    <div class="board-3d-plane"></div>
+  </div>
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-content">
+    <p class="page-hero-eyebrow">Get In Touch</p>
+    <h1 class="display-xl">Contact Us</h1>
+    <div class="gold-line" style="margin-top:1rem"></div>
+    <p style="color:var(--ivory-dim);max-width:480px;font-size:1rem">
+      We'd love to hear from you — whether you're ready to enrol or just curious about the game.
+    </p>
+  </div>
+</header>
+
+<!-- ── CONTACT SECTION ──────────────────────────────────────── -->
+<section class="section contact-section" id="demo">
+  <div class="container">
+    <div class="contact-grid">
+
+
+      <!-- Right: Form -->
+      <div class="reveal-right">
+        <div class="contact-form-card">
+          <p class="section-label" style="margin-bottom:.5rem">Quick Enquiry</p>
+          <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:400;color:var(--ivory);margin-bottom:.5rem">Send Us a Message</h3>
+          <p style="font-size:.88rem;color:var(--ivory-dim);margin-bottom:2rem">We'll reply within 24 hours. For faster response, WhatsApp us directly.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name *</label>
+                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Arjun" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name</label>
+                <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Kumar" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="arjun@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number *</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="9876543210" inputmode="numeric" maxlength="10" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="interest">I'm interested in</label>
+              <select class="form-select" id="interest" name="interest">
+                <option value="" disabled selected>Select a program…</option>
+                <option value="beginner">Beginner Course</option>
+                <option value="intermediate">Intermediate Course</option>
+                <option value="advanced">Advanced / Elite</option>
+                <option value="online">Online Classes</option>
+                <option value="tournament">Tournament Preparation</option>
+                <option value="private">Private Coaching</option>
+                <option value="demo">Free Demo Session</option>
+                <option value="other">Other / General Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="age">Student Age Group</label>
+              <select class="form-select" id="age" name="age">
+                <option value="" disabled selected>Select age range…</option>
+                <option value="6-10">6 – 10 years</option>
+                <option value="11-15">11 – 15 years</option>
+                <option value="16-18">16 – 18 years</option>
+                <option value="18+">18+ (Adult)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your chess background, goals, or any questions you have…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;font-size:.9rem;padding:1rem">
+              Send Message ↗
+            </button>
+          </form>
+
+          <div class="form-success" style="display:none">
+            <div class="form-success-icon">♔</div>
+            <h3 class="form-success-title">Message Received!</h3>
+            <p class="form-success-text">Thank you for reaching out. Our admissions team will contact you within one business day to schedule your demo session.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Left: Info -->
+      <div class="contact-info-block reveal-left">
+        <p class="section-label">Reach Out</p>
+        <div class="gold-line"></div>
+        <h2 class="display-md">Let's Start Your Chess Journey</h2>
+        <p>Fill in the form or use any of the details below and we'll get back to you within one business day. Free demo sessions are available Monday through Saturday.</p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div>
+            <p class="contact-detail-label">Address</p>
+            <p class="contact-detail-value">No. 42, 2nd Avenue, Cuddalore<br>Cuddalore — 607 001, Tamil Nadu</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div>
+            <p class="contact-detail-label">Phone</p>
+            <p class="contact-detail-value">
+              <a href="tel:+919840012345" style="color:var(--ivory-dim);transition:color .25s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--ivory-dim)'">+91 98400 12345</a><br>
+              <a href="tel:+914423456789" style="color:var(--ivory-dim);transition:color .25s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--ivory-dim)'">044 2345 6789</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉</div>
+          <div>
+            <p class="contact-detail-label">Email</p>
+            <p class="contact-detail-value">
+              <a href="mailto:richardchesscoach@gmail.com" style="color:var(--ivory-dim);transition:color .25s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--ivory-dim)'">richardchesscoach@gmail.com</a><br>
+              <a href="mailto:admissions@chessacademy.in" style="color:var(--ivory-dim);transition:color .25s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--ivory-dim)'">admissions@chessacademy.in</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <p class="contact-detail-label">Office Hours</p>
+            <p class="contact-detail-value">Monday – Friday: 8:00 AM – 8:00 PM<br>Saturday: 8:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">💬</div>
+          <div>
+            <p class="contact-detail-label">WhatsApp</p>
+            <p class="contact-detail-value">
+              <a href="https://wa.me/919087470774" target="_blank" rel="noopener" style="color:var(--ivory-dim);transition:color .25s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--ivory-dim)'">+91 90874 70774</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+          <a href="#" class="social-link" aria-label="Telegram">✈</a>
+        </div>
+
+        <div class="contact-map-wrap" style="margin-top:2rem">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.221751142876!2d79.76400107519329!3d11.749422540493462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b1686d2ad7fea7d%3A0x9b888608c3ef95a0!2sCuddalore%20Chess%20Academy!5e0!3m2!1sen!2sin!4v1782050649789!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Chess Academy map"
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────────────────────────── -->
+<section class="section" style="background:var(--board-dark)">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">FAQ</p>
+      <div class="gold-line"></div>
+      <h2 class="display-lg">Common Questions</h2>
+      <p>Quick answers to what prospective students and parents ask most.</p>
+    </div>
+
+    <div style="max-width:760px;margin-top:2rem" class="reveal">
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">What is the minimum age for enrollment?</div>
+        <div class="faq-answer">We accept students from age 6 onwards. Our youngest learners join our Weekend Junior Batch, which uses games and puzzles to make learning fun and age-appropriate.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Do I need any prior chess knowledge?</div>
+        <div class="faq-answer">Not at all. Our Beginner program starts from scratch — we cover piece movements, rules, basic strategies, and your first games. Complete beginners are very welcome.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Are online classes as effective as offline?</div>
+        <div class="faq-answer">For theory, analysis, and tactics training, online classes are equally effective. For young children under 10, we recommend at least some offline sessions for better engagement and hands-on board experience.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">What are the fees?</div>
+        <div class="faq-answer">Fees vary by program level, batch size, and format (online vs offline). Group classes start from ₹2,500/month. Contact us or attend a free demo session and we'll share a detailed fee structure tailored to your needs.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">How does the free demo session work?</div>
+        <div class="faq-answer">The demo is a 45-minute session where you (or your child) joins a regular class at no cost. Our coach will assess the student's current level and recommend the ideal batch. No commitment required after the demo.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Do you provide tournament participation support?</div>
+        <div class="faq-answer">Yes. We guide students through AICF registration, help select suitable tournaments, and provide specific preparation coaching before each event. Tournament fees are separate from coaching fees.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ──────────────────────────────────────────────────── -->
+<section class="cta-banner reveal">
+  <div class="container">
+    <p class="section-label">First Move</p>
+    <h2 class="display-md" style="color:var(--ivory);margin:.75rem 0 .5rem">Your Strongest Move is Joining Us</h2>
+    <p>Book a free demo — there's nothing to lose and everything to learn.</p>
+    <a href="#demo" class="btn btn-gold">Book Free Demo ↑</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:.5rem">
+          <div class="nav-logo-icon"><img src="chesslogo.png" alt="Britzenix Chess Academy Logo"></div>
+          <span class="nav-logo-text">Britzenix <span>Chess Academy</span></span>
+        </div>
+        <p>Cuddalore's premier chess academy, shaping champions through expert coaching and a passion for the game since 2015.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">📷</a>
+          <a href="#" class="social-link">▶</a>
+          <a href="#" class="social-link">💬</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html"   class="footer-link">Home</a></li>
+          <li><a href="about.html"   class="footer-link">About Us</a></li>
+          <li><a href="campus.html"  class="footer-link">Campus</a></li>
+          <li><a href="index.html#programs" class="footer-link">Programs</a></li>
+          <li><a href="reviews.html" class="footer-link">Reviews</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Programs</p>
+        <ul class="footer-links">
+          <li><a href="contact.html" class="footer-link">Beginner</a></li>
+          <li><a href="contact.html" class="footer-link">Intermediate</a></li>
+          <li><a href="contact.html" class="footer-link">Advanced</a></li>
+          <li><a href="contact.html" class="footer-link">Online Classes</a></li>
+          <li><a href="contact.html" class="footer-link">Tournament Prep</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact-item"><span class="footer-contact-icon">📍</span><span>Cuddalore, Tamil Nadu - 607 001</span></div>
+        <div class="footer-contact-item"><span class="footer-contact-icon">📞</span><span>+91 90874 70774</span></div>
+        <div class="footer-contact-item"><span class="footer-contact-icon">✉</span><span>richardchesscoach@gmail.com</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 <span>Britzenix Chess Academy</span>. All rights reserved.</p>
+      <p class="footer-copy">Britzenix Chess Academy · Cuddalore, Tamil Nadu</p>
+      <p class="footer-copy">Developed by <a href="https://www.sendivtech.in/" target="_blank">Sendiv Tech</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+(function () {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  function showError(input, msg) {
+    clearError(input);
+    input.style.borderColor = '#e05c5c';
+    const err = document.createElement('span');
+    err.className = 'field-error';
+    err.style.cssText = 'display:block;color:#e05c5c;font-size:.78rem;margin-top:.35rem';
+    err.textContent = msg;
+    input.parentNode.appendChild(err);
+  }
+
+  function clearError(input) {
+    input.style.borderColor = '';
+    const prev = input.parentNode.querySelector('.field-error');
+    if (prev) prev.remove();
+  }
+
+  // Live filter: phone field only ever contains digits, max 10
+  const phone = document.getElementById('phone');
+  phone.addEventListener('input', function () {
+    const cleaned = phone.value.replace(/[^0-9]/g, '').slice(0, 10);
+    if (cleaned !== phone.value) {
+      phone.value = cleaned;
+      showError(phone, 'Numbers only, please');
+    } else {
+      clearError(phone);
+    }
+  });
+
+  form.querySelectorAll('input, select, textarea').forEach(function (el) {
+    if (el === phone) return; // phone has its own listener above
+    el.addEventListener('input', function () { clearError(el); });
+    el.addEventListener('change', function () { clearError(el); });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    let valid = true;
+
+    form.querySelectorAll('.field-error').forEach(el => el.remove());
+    form.querySelectorAll('input, select, textarea').forEach(el => el.style.borderColor = '');
+
+    const firstName = document.getElementById('firstName');
+    if (!firstName.value.trim()) {
+      showError(firstName, 'First name is required');
+      valid = false;
+    }
+
+    const email = document.getElementById('email');
+    const emailVal = email.value.trim();
+
+    if (!emailVal) {
+      showError(email, 'Email is required');
+      valid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
+      showError(email, 'Enter valid email');
+      valid = false;
+    }
+
+    const phoneVal = phone.value.trim();
+
+    if (!phoneVal) {
+      showError(phone, 'Mobile number is required');
+      valid = false;
+    } else if (!/^[0-9]{10}$/.test(phoneVal)) {
+      showError(phone, 'Enter valid 10-digit number');
+      valid = false;
+    }
+
+    const success = document.querySelector('.form-success');
+
+    if (!valid) {
+      if (success) success.style.display = 'none';
+      form.style.display = 'block';
+      const firstError = document.querySelector('.field-error');
+      if (firstError) {
+        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      return;
+    }
+
+    const btn = form.querySelector('.btn-gold');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    setTimeout(function () {
+      form.style.display = 'none';
+      if (success) success.style.display = 'block';
+    }, 1400);
+  });
+})();
+</script>
+</body>
+</html>

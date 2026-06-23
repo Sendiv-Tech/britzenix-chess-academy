@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Britzenix Chess Academy Campus — explore our training facilities, gallery, and batch schedule in Chennai." />
+  <title>Campus — Britzenix Chess Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="chesslogo.png"/>
+</head>
+<body>
+
+<!-- Global floating chess-piece background layer (behind everything) -->
+<div class="piece-field" aria-hidden="true"></div>
+
+
+<!-- ── NAVBAR ──────────────────────────────────────────────── -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Britzenix Chess Academy Home">
+      <div class="nav-logo-icon"><img src="chesslogo.png" alt="Britzenix Chess Academy Logo"></div>
+      <span class="nav-logo-text">Britzenix <span>Chess Academy</span></span>
+    </a>
+    <ul class="nav-menu" role="list">
+      <li><a href="index.html"   class="nav-link">Home</a></li>
+      <li><a href="about.html"   class="nav-link">About</a></li>
+      <li><a href="campus.html"  class="nav-link active">Campus</a></li>
+      <li><a href="index.html#programs" class="nav-link">Programs</a></li>
+      <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-gold nav-cta">Join Now</a>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="index.html"   class="nav-link">Home</a>
+  <a href="about.html"   class="nav-link">About</a>
+  <a href="campus.html"  class="nav-link">Campus</a>
+  <a href="index.html#programs" class="nav-link">Programs</a>
+  <a href="reviews.html" class="nav-link">Reviews</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="contact.html" class="btn btn-gold" style="margin-top:.5rem">Join Now</a>
+</nav>
+
+<!-- ── PAGE HERO ───────────────────────────────────────────── -->
+<header class="page-hero">
+  <div class="board-3d-stage" aria-hidden="true">
+    <div class="board-3d-plane"></div>
+  </div>
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-content">
+    <p class="page-hero-eyebrow">Our Space</p>
+    <h1 class="display-xl">Our Campus</h1>
+    <div class="gold-line" style="margin-top:1rem"></div>
+    <p style="color:var(--ivory-dim);max-width:480px;font-size:1rem">
+      Purpose-built for champions. Step inside a space designed to sharpen your mind and elevate your game.
+    </p>
+  </div>
+</header>
+
+<!-- ── GALLERY ──────────────────────────────────────────────── -->
+<section class="section gallery-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Photo Gallery</p>
+      <div class="gold-line"></div>
+      <h2 class="display-lg">Inside Britzenix Chess Academy</h2>
+      <p>A glimpse of where champions are made — from tournament halls to digital analysis rooms.</p>
+    </div>
+
+    <div class="gallery-grid reveal">
+
+      <div class="gallery-item tall" data-src="image/campus1.jpeg" data-caption="Digital Analysis Room — Live engine + board analysis">
+        <div class="gallery-inner"><img src="image/campus1.jpeg" alt="Digital Analysis Room" loading="lazy"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">Digital Analysis Room<br><span style="font-weight:400;letter-spacing:.03em;text-transform:none;font-size:.68rem;color:var(--ivory-dim)">Live engine + board analysis</span></div>
+          <span class="gallery-expand-hint" aria-hidden="true">⛶</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-src="image/campus2.jpeg" data-caption="Student Sessions">
+        <div class="gallery-inner"><img src="image/campus2.jpeg" alt="Student Sessions" loading="lazy"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">Student Sessions</div>
+          <span class="gallery-expand-hint" aria-hidden="true">⛶</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-src="image/campus3.jpeg" data-caption="Coaching Session">
+        <div class="gallery-inner"><img src="image/campus3.jpeg" alt="Coaching Session" loading="lazy"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">Coaching Session</div>
+          <span class="gallery-expand-hint" aria-hidden="true">⛶</span>
+        </div>
+      </div>
+
+      <div class="gallery-item wide" data-src="image/campus4.jpeg" data-caption="Tournament Area — Live tournament play">
+        <div class="gallery-inner"><img src="image/campus4.jpeg" alt="Tournament Area" loading="lazy"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">Tournament Area<br><span style="font-weight:400;letter-spacing:.03em;text-transform:none;font-size:.68rem;color:var(--ivory-dim)">Live tournament play</span></div>
+          <span class="gallery-expand-hint" aria-hidden="true">⛶</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-src="image/campus6.jpeg" data-caption="Junior Outreach Program">
+        <div class="gallery-inner"><img src="image/campus6.jpeg" alt="Junior Outreach Program" loading="lazy"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">Junior Outreach</div>
+          <span class="gallery-expand-hint" aria-hidden="true">⛶</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-src="image/campus7.jpeg" data-caption="Trophy Day — Tournament Award Ceremony">
+        <div class="gallery-inner"><img src="image/campus7.jpeg" alt="Tournament Trophy Day" loading="lazy"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">Trophy Day</div>
+          <span class="gallery-expand-hint" aria-hidden="true">⛶</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-src="image/chess1.jpeg" data-caption="Online Class Setup">
+        <div class="gallery-inner"><img src="image/chess1.jpeg" alt="Online Class Setup" loading="lazy"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">Online Class Setup</div>
+          <span class="gallery-expand-hint" aria-hidden="true">⛶</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FACILITIES ────────────────────────────────────────────── -->
+<section class="section facilities-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <p class="section-label">What We Offer</p>
+      <div class="gold-line center"></div>
+      <h2 class="display-lg">World-Class Facilities</h2>
+      <p>Every element of our campus is designed to create the optimal environment for learning and competition.</p>
+    </div>
+
+    <div class="grid-3 facilities-grid">
+
+      <div class="facility-card reveal delay-1">
+        <div class="facility-icon"><img src="image/campus1.jpeg" alt="Main Training Hall" loading="lazy"></div>
+        <h3 class="facility-title">Main Training Hall</h3>
+        <p class="facility-desc">A climate-controlled, distraction-free hall with 40 professional-grade DGT chess sets, demo boards, and padded seating for extended sessions.</p>
+      </div>
+
+      <div class="facility-card reveal delay-2">
+        <div class="facility-icon"><img src="image/campus2.jpeg" alt="Digital Analysis Lab" loading="lazy"></div>
+        <h3 class="facility-title">Digital Analysis Lab</h3>
+        <p class="facility-desc">Workstations powered by Stockfish 17 engine, ChessBase, and Lichess integrations for deep game analysis and opening preparation.</p>
+      </div>
+
+      <div class="facility-card reveal delay-3">
+        <div class="facility-icon"><img src="image/campus3.jpeg" alt="Tournament Arena" loading="lazy"></div>
+        <h3 class="facility-title">Tournament Arena</h3>
+        <p class="facility-desc">An FIDE-compliant tournament area with wall clocks, demonstration boards, and live result display — ideal for internal championships.</p>
+      </div>
+
+      <div class="facility-card reveal delay-1">
+        <div class="facility-icon"><img src="image/campus4.jpeg" alt="Coaching Sessions" loading="lazy"></div>
+        <h3 class="facility-title">Dedicated Coaching</h3>
+        <p class="facility-desc">Small-group coaching sessions led by certified instructors, focused on tactics, openings, and structured skill progression.</p>
+      </div>
+
+      <div class="facility-card reveal delay-2">
+        <div class="facility-icon"><img src="image/campus6.jpeg" alt="Online Classes" loading="lazy"></div>
+        <h3 class="facility-title">Online Classes</h3>
+        <p class="facility-desc">Our online classes are conducted with live boards and screen-shared analysis, ensuring clear instruction for remote students.</p>
+      </div>
+
+      <div class="facility-card reveal delay-3">
+        <div class="facility-icon"><img src="image/campus7.jpeg" alt="Junior Outreach Program" loading="lazy"></div>
+        <h3 class="facility-title">Junior Outreach</h3>
+        <p class="facility-desc">School visits and beginner workshops that bring chess fundamentals to young learners across Cuddalore and surrounding areas.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── MAP ──────────────────────────────────────────────────── -->
+<section class="section map-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Find Us</p>
+      <div class="gold-line"></div>
+      <h2 class="display-lg">Visit Our Campus</h2>
+      <p style="margin-bottom:2rem">
+        Located in the heart of Cuddalore, Tamil Nadu — easily accessible by metro, bus, and road.<br>
+        <strong style="color:var(--ivory)">No. 42, 2nd Avenue, Cuddalore, Tamil Nadu — 607 001</strong>
+      </p>
+    </div>
+    <div class="map-wrap reveal">
+      <!-- Google Maps embed for Cuddalore area -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.221751142876!2d79.76400107519329!3d11.749422540493462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b1686d2ad7fea7d%3A0x9b888608c3ef95a0!2sCuddalore%20Chess%20Academy!5e0!3m2!1sen!2sin!4v1782050649789!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Britzenix Chess Academy Location — Cuddalore, Tamil Nadu"
+      ></iframe>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2rem" class="reveal">
+      <div class="story-card" style="display:flex;align-items:flex-start;gap:1rem">
+        <span style="font-size:1.5rem;flex-shrink:0">🚇</span>
+        <div>
+          <p style="color:var(--ivory);font-weight:500;margin-bottom:.25rem">Metro</p>
+          <p style="font-size:.85rem;color:var(--ivory-dim)">Anna Nagar East station — 5 min walk</p>
+        </div>
+      </div>
+      <div class="story-card" style="display:flex;align-items:flex-start;gap:1rem">
+        <span style="font-size:1.5rem;flex-shrink:0">🚌</span>
+        <div>
+          <p style="color:var(--ivory);font-weight:500;margin-bottom:.25rem">Bus</p>
+          <p style="font-size:.85rem;color:var(--ivory-dim)">Routes 27C, 70, 221 — Anna Nagar stop</p>
+        </div>
+      </div>
+      <div class="story-card" style="display:flex;align-items:flex-start;gap:1rem">
+        <span style="font-size:1.5rem;flex-shrink:0">🚗</span>
+        <div>
+          <p style="color:var(--ivory);font-weight:500;margin-bottom:.25rem">By Road</p>
+          <p style="font-size:.85rem;color:var(--ivory-dim)">Free parking available in the premises</p>
+        </div>
+      </div>
+      <div class="story-card" style="display:flex;align-items:flex-start;gap:1rem">
+        <span style="font-size:1.5rem;flex-shrink:0">🛺</span>
+        <div>
+          <p style="color:var(--ivory);font-weight:500;margin-bottom:.25rem">Auto / Cab</p>
+          <p style="font-size:.85rem;color:var(--ivory-dim)">Search "Chess Academy Anna Nagar" on Maps</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BATCH TIMINGS ─────────────────────────────────────────── -->
+<section class="section batches-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Schedule</p>
+      <div class="gold-line"></div>
+      <h2 class="display-lg">Batch Timings</h2>
+      <p>Multiple batches throughout the week so you can find the slot that fits your life.</p>
+    </div>
+
+    <div class="reveal" style="overflow-x:auto">
+      <table class="batches-table">
+        <thead>
+          <tr>
+            <th>Batch</th>
+            <th>Level</th>
+            <th>Days</th>
+            <th>Time</th>
+            <th>Duration</th>
+            <th>Format</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color:var(--ivory)">Morning Batch A</strong></td>
+            <td>Beginner</td>
+            <td>Mon, Wed, Fri</td>
+            <td>7:00 AM – 8:30 AM</td>
+            <td>90 min</td>
+            <td>Offline</td>
+            <td><span class="batch-badge badge-open">Open</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--ivory)">Morning Batch B</strong></td>
+            <td>Intermediate</td>
+            <td>Tue, Thu, Sat</td>
+            <td>8:00 AM – 9:30 AM</td>
+            <td>90 min</td>
+            <td>Offline</td>
+            <td><span class="batch-badge badge-open">Open</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--ivory)">School Batch</strong></td>
+            <td>Beginner / Inter</td>
+            <td>Mon – Sat</td>
+            <td>4:00 PM – 5:30 PM</td>
+            <td>90 min</td>
+            <td>Offline</td>
+            <td><span class="batch-badge badge-full">Full</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--ivory)">Evening Batch</strong></td>
+            <td>Intermediate</td>
+            <td>Mon, Wed, Fri</td>
+            <td>6:00 PM – 7:30 PM</td>
+            <td>90 min</td>
+            <td>Offline</td>
+            <td><span class="batch-badge badge-open">Open</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--ivory)">Weekend Intensive</strong></td>
+            <td>Advanced</td>
+            <td>Sat, Sun</td>
+            <td>9:00 AM – 12:00 PM</td>
+            <td>3 hours</td>
+            <td>Offline</td>
+            <td><span class="batch-badge badge-open">Open</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--ivory)">Online Morning</strong></td>
+            <td>All Levels</td>
+            <td>Mon – Fri</td>
+            <td>6:30 AM – 7:30 AM</td>
+            <td>60 min</td>
+            <td>Online</td>
+            <td><span class="batch-badge badge-open">Open</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--ivory)">Online Evening</strong></td>
+            <td>All Levels</td>
+            <td>Mon – Sat</td>
+            <td>7:00 PM – 8:30 PM</td>
+            <td>90 min</td>
+            <td>Online</td>
+            <td><span class="batch-badge badge-open">Open</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--ivory)">Private Coaching</strong></td>
+            <td>Any</td>
+            <td>By Appointment</td>
+            <td>Flexible</td>
+            <td>60–90 min</td>
+            <td>Online / Offline</td>
+            <td><span class="batch-badge badge-open">Open</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:2rem;padding:1.5rem;background:var(--surface);border-radius:var(--r-md);border:1px solid rgba(212,175,55,.15)" class="reveal">
+      <p style="font-size:.9rem;color:var(--ivory-dim)">
+        ♟ <strong style="color:var(--gold)">Note:</strong> Batch availability is subject to change. Contact us to confirm availability and to book your free demo session before enrolment.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ──────────────────────────────────────────────────── -->
+<section class="cta-banner reveal">
+  <div class="container">
+    <p class="section-label">Visit Us</p>
+    <h2 class="display-md" style="color:var(--ivory);margin:.75rem 0 .5rem">Come See it For Yourself</h2>
+    <p>Schedule a free campus tour and demo session — no commitment required.</p>
+    <a href="contact.html" class="btn btn-gold">Book a Visit</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:.5rem">
+          <div class="nav-logo-icon"><img src="chesslogo.png" alt="Britzenix Chess Academy Logo"></div>
+          <span class="nav-logo-text">Britzenix <span>Chess Academy</span></span>
+        </div>
+        <p>Chennai's premier chess academy, shaping champions through expert coaching and a passion for the game since 2006.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">📷</a>
+          <a href="#" class="social-link">▶</a>
+          <a href="#" class="social-link">💬</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html"   class="footer-link">Home</a></li>
+          <li><a href="about.html"   class="footer-link">About Us</a></li>
+          <li><a href="campus.html"  class="footer-link">Campus</a></li>
+          <li><a href="index.html#programs" class="footer-link">Programs</a></li>
+          <li><a href="reviews.html" class="footer-link">Reviews</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Programs</p>
+        <ul class="footer-links">
+          <li><a href="contact.html" class="footer-link">Beginner</a></li>
+          <li><a href="contact.html" class="footer-link">Intermediate</a></li>
+          <li><a href="contact.html" class="footer-link">Advanced</a></li>
+          <li><a href="contact.html" class="footer-link">Online Classes</a></li>
+          <li><a href="contact.html" class="footer-link">Tournament Prep</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact-item"><span class="footer-contact-icon">📍</span><span>Cuddalore, Tamil Nadu - 607 001</span></div>
+        <div class="footer-contact-item"><span class="footer-contact-icon">📞</span><span>+91 90874 70774</span></div>
+        <div class="footer-contact-item"><span class="footer-contact-icon">✉</span><span>richardchesscoach@gmail.com</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 <span>Britzenix Chess Academy</span>. All rights reserved.</p>
+      <p class="footer-copy">Britzenix Chess Academy · Cuddalore, Tamil Nadu</p>
+      <p class="footer-copy">Developed by <a href="https://www.sendivtech.in/" target="_blank">Sendiv Tech</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- ═══════════════════════════════════════════════════════════
+     GALLERY LIGHTBOX HTML
+     Lives at the root of <body> so it's outside all stacking
+     contexts and can truly be fullscreen on every device.
+     ═══════════════════════════════════════════════════════════ -->
+<div class="gallery-lightbox" id="galleryLightbox"
+     role="dialog" aria-modal="true" aria-label="Image viewer" tabindex="-1">
+
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+  <div class="lightbox-panel" role="document">
+    <!-- Close -->
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">✕</button>
+
+    <!-- Prev / Next arrows (hidden on small mobile, used on tablet+) -->
+    <button class="lightbox-btn prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <button class="lightbox-btn next" id="lightboxNext" aria-label="Next image">›</button>
+
+    <!-- Main image -->
+    <div class="lightbox-img-wrap" id="lightboxImgWrap">
+      <img id="lightboxImg" src="" alt="" draggable="false" />
+    </div>
+
+    <!-- Caption + counter -->
+    <div class="lightbox-caption">
+      <span class="lightbox-caption-text" id="lightboxCaption"></span>
+      <span class="lightbox-counter"      id="lightboxCounter"></span>
+    </div>
+
+    <!-- Thumbnail strip -->
+    <div class="lightbox-thumbs" id="lightboxThumbs" role="tablist" aria-label="Image thumbnails"></div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   GALLERY LIGHTBOX — fully cross-device
+   Works on: Windows/Mac desktop, Android Chrome/Firefox,
+             iOS Safari (including safe-area), iPad, tablets.
+   Features:
+   • Desktop hover → CSS popup (pure CSS, no JS)
+   • Click/Tap → lightbox opens
+   • Touch swipe left/right to navigate
+   • Keyboard: ← → ESC
+   • Thumbnail strip with active indicator
+   • Smooth image crossfade on navigation
+   • Body scroll lock (iOS-safe, no layout shift)
+   • Focus trap inside modal for accessibility
+   • All tap targets ≥ 44px per Apple HIG / WCAG
+   ═══════════════════════════════════════════════════════════ */
+(function () {
+  'use strict';
+
+  /* ── Collect all gallery items with a data-src ── */
+  const items = Array.from(
+    document.querySelectorAll('.gallery-item[data-src]')
+  );
+  if (!items.length) return;
+
+  /* ── DOM refs ── */
+  const lightbox  = document.getElementById('galleryLightbox');
+  const backdrop  = document.getElementById('lightboxBackdrop');
+  const panel     = lightbox.querySelector('.lightbox-panel');
+  const lbImg     = document.getElementById('lightboxImg');
+  const lbImgWrap = document.getElementById('lightboxImgWrap');
+  const lbCap     = document.getElementById('lightboxCaption');
+  const lbCount   = document.getElementById('lightboxCounter');
+  const lbThumbs  = document.getElementById('lightboxThumbs');
+  const btnClose  = document.getElementById('lightboxClose');
+  const btnPrev   = document.getElementById('lightboxPrev');
+  const btnNext   = document.getElementById('lightboxNext');
+
+  let current    = 0;
+  let isOpen     = false;
+  let scrollY    = 0;   // saved scroll position for iOS scroll-lock
+
+  /* ── Build thumbnail strip ── */
+  items.forEach((item, i) => {
+    const src = item.dataset.src;
+    const cap = item.dataset.caption || '';
+
+    const thumb  = document.createElement('button');
+    thumb.className   = 'lightbox-thumb';
+    thumb.dataset.idx = i;
+    thumb.setAttribute('role', 'tab');
+    thumb.setAttribute('aria-label', cap || `Image ${i + 1}`);
+    thumb.setAttribute('aria-selected', 'false');
+
+    const img = document.createElement('img');
+    img.src = src; img.alt = cap; img.loading = 'lazy';
+    thumb.appendChild(img);
+
+    thumb.addEventListener('click', () => navigate(i));
+    lbThumbs.appendChild(thumb);
+  });
+
+  function thumbs() { return Array.from(lbThumbs.querySelectorAll('.lightbox-thumb')); }
+
+  /* ── Navigate to an image index ── */
+  function navigate(index) {
+    current = (index + items.length) % items.length;
+    const src = items[current].dataset.src;
+    const cap = items[current].dataset.caption || '';
+
+    /* Crossfade: fade out → swap src → fade in */
+    lbImg.classList.add('transitioning');
+    setTimeout(() => {
+      lbImg.src = src;
+      lbImg.alt = cap;
+      lbImg.onload  = () => lbImg.classList.remove('transitioning');
+      lbImg.onerror = () => lbImg.classList.remove('transitioning');
+    }, 200);
+
+    lbCap.textContent   = cap;
+    lbCount.textContent = `${current + 1} / ${items.length}`;
+
+    /* Update active thumbnail */
+    thumbs().forEach((t, i) => {
+      const active = i === current;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    /* Scroll active thumb into view — works on iOS too */
+    const activeThumb = thumbs()[current];
+    if (activeThumb) {
+      activeThumb.scrollIntoView({
+        behavior: 'smooth', block: 'nearest', inline: 'center'
+      });
+    }
+  }
+
+  /* ── Scroll lock (iOS-safe: uses position:fixed + scroll offset) ── */
+  function lockScroll() {
+    scrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top      = `-${scrollY}px`;
+    document.body.style.left     = '0';
+    document.body.style.right    = '0';
+    document.body.style.overflow = 'hidden';
+  }
+  function unlockScroll() {
+    document.body.style.position = '';
+    document.body.style.top      = '';
+    document.body.style.left     = '';
+    document.body.style.right    = '';
+    document.body.style.overflow = '';
+    window.scrollTo(0, scrollY);
+  }
+
+  /* ── Open ── */
+  function open(index) {
+    isOpen = true;
+    lockScroll();
+    lightbox.classList.add('open');
+    navigate(index);
+    /* Focus the panel for keyboard users */
+    setTimeout(() => lightbox.focus(), 50);
+  }
+
+  /* ── Close ── */
+  function close() {
+    isOpen = false;
+    lightbox.classList.remove('open');
+    unlockScroll();
+    /* Clear src after animation so no flicker on reopen */
+    setTimeout(() => { lbImg.src = ''; }, 350);
+  }
+
+  /* ── Wire gallery item clicks/taps ── */
+  items.forEach((item, i) => {
+    item.addEventListener('click', () => open(i));
+    /* Keyboard accessibility for gallery grid */
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('role', 'button');
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); }
+    });
+  });
+
+  /* ── Controls ── */
+  btnClose.addEventListener('click', close);
+  backdrop.addEventListener('click', close);
+  btnPrev.addEventListener('click', () => navigate(current - 1));
+  btnNext.addEventListener('click', () => navigate(current + 1));
+
+  /* ── Keyboard navigation ── */
+  document.addEventListener('keydown', (e) => {
+    if (!isOpen) return;
+    switch (e.key) {
+      case 'Escape':     e.preventDefault(); close(); break;
+      case 'ArrowLeft':  e.preventDefault(); navigate(current - 1); break;
+      case 'ArrowRight': e.preventDefault(); navigate(current + 1); break;
+    }
+  });
+
+  /* ── Touch / swipe navigation ──
+     Works on both Android Chrome and iOS Safari.
+     Only triggers if horizontal swipe > 45px AND more horizontal
+     than vertical (to avoid fighting page scroll). */
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let isSwiping   = false;
+
+  lbImgWrap.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    isSwiping   = false;
+  }, { passive: true });
+
+  lbImgWrap.addEventListener('touchmove', (e) => {
+    const dx = Math.abs(e.touches[0].clientX - touchStartX);
+    const dy = Math.abs(e.touches[0].clientY - touchStartY);
+    /* Horizontal swipe: prevent page scroll */
+    if (dx > dy && dx > 8) {
+      isSwiping = true;
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+  lbImgWrap.addEventListener('touchend', (e) => {
+    if (!isSwiping) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 45) {
+      navigate(current + (dx < 0 ? 1 : -1));
+    }
+    isSwiping = false;
+  }, { passive: true });
+
+  /* Also allow swiping on the full lightbox (outside img area) on mobile */
+  lightbox.addEventListener('touchstart', (e) => {
+    if (e.target.closest('.lightbox-panel') && !e.target.closest('.lightbox-img-wrap')) return;
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  lightbox.addEventListener('touchend', (e) => {
+    if (e.target.closest('.lightbox-thumbs')) return; /* don't swipe when scrolling thumbs */
+    if (e.target.closest('.lightbox-btn') || e.target.closest('.lightbox-close')) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 55 && !e.target.closest('.lightbox-img-wrap')) {
+      navigate(current + (dx < 0 ? 1 : -1));
+    }
+  }, { passive: true });
+
+  /* ── Focus trap: keep Tab/Shift+Tab inside the modal ── */
+  const focusable = () => Array.from(
+    lightbox.querySelectorAll('button:not([disabled]), [tabindex="0"]')
+  ).filter(el => !el.closest('.gallery-grid'));
+
+  lightbox.addEventListener('keydown', (e) => {
+    if (!isOpen || e.key !== 'Tab') return;
+    const els  = focusable();
+    const first = els[0];
+    const last  = els[els.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
